@@ -1,0 +1,103 @@
+From alice@example.com Mon Jan 05 10:00:00 2026
+From: alice@example.com
+To: bob@example.com
+Subject: Hello
+Date: Mon, 05 Jan 2026 10:00:00 +0000
+Message-ID: <a1@example.com>
+Content-Type: text/plain; charset="utf-8"
+
+First message body.
+
+From alice@example.com Mon Jan 05 10:00:00 2026
+From: alice@example.com
+To: bob@example.com
+Subject: Hello
+Date: Mon, 05 Jan 2026 10:00:00 +0000
+Message-ID: <a1@example.com>
+Content-Type: text/plain; charset="utf-8"
+
+First message body.
+
+From bob@example.com Mon Jan 05 11:00:00 2026
+From: bob@example.com
+To: alice@example.com
+Subject: Report
+Date: Mon, 05 Jan 2026 11:00:00 +0000
+Message-ID: <B2@Example.COM>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BB"
+
+--BB
+Content-Type: text/plain; charset="utf-8"
+
+Quarterly numbers attached.
+--BB
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="data.bin"
+
+AAECAwQFBg==
+--BB--
+
+From bob@example.com Mon Jan 05 11:00:00 2026
+From: bob@example.com
+To: alice@example.com
+Subject: Report
+Date: Mon, 05 Jan 2026 11:00:00 +0000
+Message-ID:   <b2@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BB"
+
+--BB
+Content-Type: text/plain; charset="utf-8"
+
+Quarterly numbers attached.
+--BB
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="data.bin"
+
+AAECAwQFBg==
+--BB--
+
+From carol@example.com Tue Jan 06 09:30:00 2026
+Received: from mail.example.com by mx.example.com; Tue, 06 Jan 2026 09:30:01 +0000
+From: carol@example.com
+To: dan@example.com
+Subject: Lunch?
+Date: Tue, 06 Jan 2026 09:30:00 +0000
+Content-Type: text/plain; charset="utf-8"
+
+Lunch tomorrow at noon?
+
+From carol@example.com Tue Jan 06 09:30:00 2026
+Received: from mail.example.com by backup.example.net; Tue, 06 Jan 2026 09:31:44 +0000
+From: carol@example.com
+To: dan@example.com
+Subject: Lunch?
+Date: Tue, 06 Jan 2026 09:30:00 +0000
+Content-Type: text/plain; charset="utf-8"
+
+Lunch tomorrow at noon?
+
+From dan@example.com Wed Jan 07 08:15:00 2026
+From: dan@example.com
+To: alice@example.com
+Subject: Server log excerpt
+Date: Wed, 07 Jan 2026 08:15:00 +0000
+Message-ID: <d4@example.com>
+Content-Type: text/plain; charset="utf-8"
+
+Here is the log line you asked for:
+From alice@example.com Mon Jan 05 10:00:00 2026
+...and the line after it.
+
+From erin@example.com Thu Jan 08 14:45:00 2026
+From: erin@example.com
+To: alice@example.com
+Subject: Invoice paid
+Date: Thu, 08 Jan 2026 14:45:00 +0000
+Message-ID: <e5@example.com>
+Content-Type: text/plain; charset="utf-8"
+
+Paid in full, thanks.
